@@ -2,92 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web daveloper portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="open-sans-normal">
-    <header class="header secendary-bg ">
-        <nav>
-            <h3 class="nav-title"><span class="text-primary">Sayed Masud Ali</span> </h3>
-            <ul>
 
-                <li><a class="dark-2" href="">Portfolio</a></li>
-                <li><a class="dark-2" href="">Blog</a></li>
+  <!-- Live Clock -->
+  <div id="clock"></div>
 
+  <!-- Header -->
+  <header class="header secendary-bg">
+    <nav>
+      <h3 class="nav-title"><span class="text-primary">Sayed Masud Ali</span></h3>
+      <ul>
+        <li><a class="dark-2" href="#">Portfolio</a></li>
+        <li><a class="dark-2" href="#">Blog</a></li>
+        <li><a class="btn-primary" href="#">Hire Me</a></li>
+        <!-- এখানে button এর পরিবর্তে সরাসরি styled <a> ব্যবহার করা হলো -->
+      </ul>
+    </nav>
 
-                <li><a class="dark-2" href=""><button class="btn-primary">Hire Me</button></a></li>
-
-            </ul>
-        </nav>
-        <div class="banner">
-        <div class="banner-content">
-            <h4 class="banner-title">Hi, I am</h4>
-            <h1 class="banner-greetings  .dark-2">Masud Ali</h1>
-            <p class="banner-description">Shot what able cold 
-                new see hold.Friendly as an
-                 betrayed formerly he. Morning because as to society
-                behaved moments.</p>
-        
-          <button class="btn-primary">Download CV</button>
-          <button class="btn-primary">Contact</butto>
-          </div>
-<img class="banner-profile-picture" src="/images/sayed masud ali.png" alt="">
-         </div>
-          
-    </header>
-    <main>
-        <section class="about">
-            <h2 class="section-title">About Me</h2>
-
-            <p class="section-description">I, m a designer & developer
-                 with a passion for web design. I enjoy developing simple, clean 
-                 and slick websites that provide real value to the end user. 
-                 Thousands of clients have procured exceptional resulfs while
-                  working with me. Delivering work within 
-                time and budget which meets clients requirements in our mata.
-
-            </p>
-
-         
-<div class="info">
-      <div class="info-item">
-        <span class="label">name</span>
-        <span class="value">Sayed Masud Ali</span>
+    <div class="banner">
+      <div class="banner-content">
+        <h4 class="banner-title">Hi, I am</h4>
+        <h1 class="banner-greetings dark-2">Masud Ali</h1>
+        <p class="banner-description">
+          I’m a designer & developer with a passion for web design.
+          I enjoy developing clean and user-friendly websites that
+          provide real value to clients.
+        </p>
+        <a href="#" class="btn-primary">Download CV</a>
+        <a href="#" class="btn-primary">Contact</a>
       </div>
-      <div class="info-item">
-        <span class="label">email</span>
-        <span class="value">sayedmasud108@gmail.com</span>
-      </div>
-      <div class="info-item">
-        <span class="label">date of birth</span>
-        <span class="value">18-jul.1994</span>
-      </div>
-      <div class="info-item">
-        <span class="label">From</span>
-        <span class="value">Bangladesh</span>
-      </div>
+      <img class="banner-profile-picture" src="/images/sayed masud ali.png" alt="Profile Picture">
     </div>
-           
+  </header>
 
-        </section>
+  <!-- About Section -->
+  <main>
+    <section class="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-description">
+        I’m a passionate web designer & developer from Bangladesh.
+        I create modern, responsive, and optimized websites that
+        deliver results. My goal is to complete every project on
+        time and within budget.
+      </p>
 
-    
+      <div class="info">
+        <div class="info-item">
+          <span class="label">Name</span>
+          <span class="value">Sayed Masud Ali</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Email</span>
+          <span class="value">sayedmasud108@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Date of Birth</span>
+          <span class="value">18-Jul-1994</span>
+        </div>
+        <div class="info-item">
+          <span class="label">From</span>
+          <span class="value">Bangladesh</span>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- Footer -->
+  <footer>
+    <p style="text-align:center; padding:20px; color:#555;">
+      &copy; 2025 Sayed Masud Ali. All Rights Reserved.
+    </p>
+  </footer>
 
+  <!-- Live Clock Script -->
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById("clock").textContent = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
 
-    </main>
-
-    <footer>
-
-
-    </footer>
 </body>
-
 </html>
