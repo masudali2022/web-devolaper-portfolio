@@ -6,13 +6,19 @@
     "wdth" 100;
 }
 /*shared styles*/
+.secendary-bg{
+    background-color: #9cd4c2c6;
+   
+}
 
 .text-primary{
     color: #FD6E0A;
+
 }
 
 .dark-2 {
     color: #474747;
+    font-weight: bolder;
 }
 .btn-primary{
 background-color: #FD6E0A;
@@ -23,10 +29,24 @@ padding: 18px 35px;
 border: none;
 border-radius: 5px;
 }
+
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color:#181818;
+}
 .header{
     background-image: url(/images/developer.png), url(/images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left ,bottom right;
+}
+
+
+.section-description{
+    font-size: 18px;
+    color: #757575;
+    text-align: center;
+
 }
 
 /*nav styles*/
@@ -62,7 +82,7 @@ nav li a{
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 0 35px 0 200px;
+    margin: 0 0px 0 200px;
 }
 
 .banner-content{
@@ -80,4 +100,68 @@ font-weight: 600;
 
 .banner-profile-picture{
     width: 580px;
+    
 }
+/*MAIN STYLES*/
+
+   
+
+.about {
+
+      background: #8cd0ef;
+      margin: auto;
+    
+      margin-top: 30px;
+     align-items: center;
+      padding: 30px;
+      border-radius: 12px;
+   
+      color: #222;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .about h2 {
+       
+      margin-bottom: 15px;
+      font-size: 28px;
+      text-align: center;
+      color: #111;
+    }
+
+    .about p {
+      margin-bottom: 25px;
+      color: #333;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* info cards container */
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+
+    /* single card */
+    .info-item {
+      flex: 1 1 40%;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .label {
+      display: block;
+      font-weight: bold;
+      color: #0a4f75;
+      text-transform: capitalize;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+
+
+
